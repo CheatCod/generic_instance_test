@@ -3,6 +3,8 @@ import { DotLodestoneConfig } from "../libs/bindings/DotLodestoneConfig.ts";
 import { ManifestValue } from "../libs/bindings/ManifestValue.ts";
 import { SetupManifest } from "../libs/bindings/SetupManifest.ts";
 
+export let lodestoneConfig : any;
+
 
 export async function setupManifest(): Promise<SetupManifest> {
     return {
@@ -35,6 +37,7 @@ export async function setupInstance(
     dotLodestoneConfig: DotLodestoneConfig,
     path: string,
 ) {
+    lodestoneConfig = dotLodestoneConfig;
     
 }
 
