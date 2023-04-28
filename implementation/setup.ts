@@ -35,7 +35,7 @@ export async function setupInstance(
     dotLodestoneConfig: DotLodestoneConfig,
     path: string,
 ) {
-    throw new Error("Not implemented");
+    
 }
 
 export async function restoreInstance(
