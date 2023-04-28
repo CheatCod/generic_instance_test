@@ -1,7 +1,7 @@
 import { CausedBy } from "../libs/bindings/CausedBy.ts";
 import { InstanceState } from "../libs/bindings/InstanceState.ts";
 import { PerformanceReport } from "../libs/bindings/PerformanceReport.ts";
-import { emitConsoleOut } from "https://raw.githubusercontent.com/Lodestone-Team/lodestone_core/releases/0.5.0/src/deno_ops/events/events.ts;
+import { emitConsoleOut } from "https://raw.githubusercontent.com/Lodestone-Team/lodestone_core/releases/0.5.0/src/deno_ops/events/events.ts";
 
 /**
  * @param {CausedBy} caused_by - The source that requested this instance to start
