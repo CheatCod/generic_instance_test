@@ -112,5 +112,10 @@ export async function sendCommand(
  */
 // deno-lint-ignore require-await
 export async function monitor(): Promise<PerformanceReport> {
-  throw new Error("Not implemented");
+  return {
+    memory_usage: null,
+    disk_usage: null,
+    cpu_usage: null,
+    start_time: null,
+  }
 }
