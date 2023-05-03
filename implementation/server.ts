@@ -2,7 +2,7 @@ import { CausedBy } from "../libs/bindings/CausedBy.ts";
 import { InstanceState } from "../libs/bindings/InstanceState.ts";
 import { PerformanceReport } from "../libs/bindings/PerformanceReport.ts";
 import { lodestoneConfig } from "./setup.ts";
-
+import { emitConsoleOut } from "https://raw.githubusercontent.com/Lodestone-Team/lodestone_core/releases/0.5.0/src/deno_ops/events/events.ts";
 
 /**
  * @param {CausedBy} caused_by - The source that requested this instance to start
@@ -114,8 +114,4 @@ export async function sendCommand(
 // deno-lint-ignore require-await
 export async function monitor(): Promise<PerformanceReport> {
   throw new Error("Not implemented");
-}
-
-function emitConsoleOut(arg0: string,arg1: string,uuid: any) {
-throw new Error("Function not implemented.");
 }
