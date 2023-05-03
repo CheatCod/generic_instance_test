@@ -1,8 +1,7 @@
 import { CausedBy } from "../libs/bindings/CausedBy.ts";
 import { InstanceState } from "../libs/bindings/InstanceState.ts";
 import { PerformanceReport } from "../libs/bindings/PerformanceReport.ts";
-import { emitConsoleOut } from "https://raw.githubusercontent.com/Lodestone-Team/lodestone_core/releases/0.5.0/src/deno_ops/events/events.ts";
-import { lodestoneConfig } from "./setup.ts";
+
 
 /**
  * @param {CausedBy} caused_by - The source that requested this instance to start
@@ -18,8 +17,6 @@ import { lodestoneConfig } from "./setup.ts";
 // deno-lint-ignore require-await
 export async function startInstance(caused_by: CausedBy, block: boolean) {
   // implementation below
-  emitConsoleOut("Hello world1!", "generic_instance_name", lodestoneConfig.uuid);
-  emitConsoleOut("Hello world2!", "generic_instance_name", lodestoneConfig.uuid);
 }
 
 /**
@@ -113,10 +110,5 @@ export async function sendCommand(
  */
 // deno-lint-ignore require-await
 export async function monitor(): Promise<PerformanceReport> {
-  return {
-    memory_usage: BigInt(8000),
-    disk_usage: null,
-    cpu_usage: 50,
-    start_time: null,
-  }
+  throw new Error("Not implemented");
 }

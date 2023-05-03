@@ -234,7 +234,7 @@ export async function procedure_bridge() {
     // This function will throw if it's called more than once.
     ops.proc_bridge_ready();
     while (true) {
-        const procedure: ProcedureCall = await core.opAsync("on_procedure");
+        const procedure: ProcedureCall = await core.opAsync("next_procedure");
         const inner = procedure.inner;
         let ret: ProcedureCallResultInner = "Void";
         if (isTConfig(inner)) {

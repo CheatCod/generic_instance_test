@@ -38,7 +38,6 @@ export async function setupInstance(
     path: string,
 ) {
     lodestoneConfig = dotLodestoneConfig;
-
 }
 
 export async function restoreInstance(
@@ -46,5 +45,4 @@ export async function restoreInstance(
     path: string,
 ) {
     lodestoneConfig = dotLodestoneConfig;
-
 }
